@@ -1,4 +1,3 @@
-import { compileNgModule } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,6 +9,8 @@ export class EventBindingComponent {
   textoDigitado: string = '';
   valorSalvo: string = '';
   isMouseOver: boolean = false;
+
+  indoPraOutroCom: string = 'angular';
 
   mouseOver() {
     this.isMouseOver = !this.isMouseOver;
