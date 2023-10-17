@@ -1,6 +1,12 @@
 <h1 class="top flex">Aprendendo Angular</h1>
 
 
-<app-data-binding class="flex" style="padding: 40px; margin-top: 20px;"></app-data-binding>
+<!-- <app-data-binding class="flex" style="padding: 40px; margin-top: 20px;"></app-data-binding> -->
 <!-- <app-event-binding></app-event-binding> -->
 <!-- <app-to-way-data-binding class="flex"></app-to-way-data-binding> -->
+
+<div class="flex">
+  <app-ciclo [valorInicial]="valorPai" *ngIf="!deletar"></app-ciclo>
+  <button (click)="valorMudou()">Mudar valor</button>
+  <button (click)="excluir()">Deletar</button>
+</div>
