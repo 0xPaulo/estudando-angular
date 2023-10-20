@@ -1,4 +1,4 @@
-import { EventBindingComponent } from './../event-binding/event-binding.component';
+import { EventBindingComponent } from '../event-binding/event-binding.component';
 import { Component } from '@angular/core';
 
 @Component({
