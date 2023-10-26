@@ -1,0 +1,22 @@
+<section class="flex">
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button (click)="botaoClicado()" class="btn btn-primary">Me clique</button>
+    </div>
+    <div>
+      <p>digita o valor</p>
+      <input type="text" (keyup.enter)="salvarValor(valorInput.value)" (blur)="salvarValor(valorInput.value)"
+        #valorInput>
+      <p [style.display]="valorSalvo ? 'block':'none'"> O nome: {{valorSalvo}} foi salvo</p>
+    </div>
+    <br>
+    <div (mouseover)="mouseOver()" (mouseout)="mouseOver()" [class.highlight]="isMouseOver">
+      Passe o mouse aqui
+    </div>
+
+  </article>
+  <div>
+    <outro [variavel]="indoPraOutroCom"></outro>
+  </div>
+</section>
