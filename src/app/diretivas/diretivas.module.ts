@@ -8,6 +8,8 @@ import { DiretivasNgForComponent } from './diretivas-ng-for/diretivas-ng-for.com
 import { DiretivasNgIfComponent } from './diretivas-ng-if/diretivas-ng-if.component';
 import { DiretivasNgSwitchComponent } from './diretivas-ng-switch/diretivas-ng-switch.component';
 import { DiretivasComponent } from './diretivas.component';
+import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
+import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-content.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { DiretivasComponent } from './diretivas.component';
     DiretivasNgForComponent,
     DiretivaNgClassComponent,
     DiretivaNgStyleComponent,
+    OperadorElvisComponent,
+    ExemploNgContentComponent,
   ],
   exports: [DiretivasComponent],
   imports: [CommonModule, FormsModule],
