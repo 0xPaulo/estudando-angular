@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CicloComponent } from './ciclo.component';
+import { DiretivasComponent } from './diretivas.component';
 
-describe('CicloComponent', () => {
-  let component: CicloComponent;
-  let fixture: ComponentFixture<CicloComponent>;
+describe('DiretivasComponent', () => {
+  let component: DiretivasComponent;
+  let fixture: ComponentFixture<DiretivasComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CicloComponent]
+      declarations: [DiretivasComponent]
     });
-    fixture = TestBed.createComponent(CicloComponent);
+    fixture = TestBed.createComponent(DiretivasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
