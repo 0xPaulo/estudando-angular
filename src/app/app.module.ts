@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { DiretivasModule } from './diretivas/diretivas.module';
+import { FundoAzulDirective } from './shared/fundo-azul.directive';
 
 @NgModule({
   declarations: [AppComponent],
