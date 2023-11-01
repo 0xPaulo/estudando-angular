@@ -1,15 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  color: white;
+}
 body {
   background-color: rgb(43, 43, 43) !important;
 }
-h2,
-h1,
-p,
-h3,
-h4,
-button {
-  color: rgb(240, 240, 240);
-}
 button {
   background-color: gray;
+}
+input {
+  background-color: transparent;
 }
