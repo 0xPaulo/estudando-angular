@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { DiretivasModule } from './diretivas/diretivas.module';
-import { FundoAzulDirective } from './shared/fundo-azul.directive';
+import { ServicoModule } from './servico/servico.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, DiretivasModule],
+  imports: [BrowserModule, DiretivasModule, ServicoModule],
   providers: [],
   bootstrap: [AppComponent],
 })
