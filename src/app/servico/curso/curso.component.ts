@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { CursoService } from './curso.service';
+import { CursoService } from '../../service/curso.service';
 
 @Component({
   selector: 'app-curso',
   templateUrl: './curso.component.html',
   styleUrls: ['./curso.component.scss'],
+  providers: [CursoService],
 })
 export class CursoComponent implements OnInit {
   cursos: string[] = [];
@@ -15,10 +16,10 @@ export class CursoComponent implements OnInit {
     // this.cursoService = this.service;
   }
   ngOnInit() {
-    this.cursos = this.service.getCursos();
     // assim nao precina nem declarar a variavel
-  }
-  addCurso(curso: string) {
-    this.service.addCurso(curso);
+    this.cursos = this.service.getCursos();
+
+    // geito 2
+    CursoService.criouNovoCurso.subscribe((curso) => this.cursos.push(curso));
   }
 }
