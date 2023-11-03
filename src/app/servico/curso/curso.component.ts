@@ -19,7 +19,7 @@ export class CursoComponent implements OnInit {
     // assim nao precina nem declarar a variavel
     this.cursos = this.service.getCursos();
 
-    // geito 2
+    // jeito 2
     CursoService.criouNovoCurso.subscribe((curso) => this.cursos.push(curso));
   }
 }

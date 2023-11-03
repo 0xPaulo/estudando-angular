@@ -1,8 +1,9 @@
 import { EventEmitter, Injectable } from '@angular/core';
+import { LogService } from './log.service';
 
 @Injectable()
 export class CursoService {
-  constructor() {
+  constructor(private _log: LogService) {
     console.log(CursoService);
   }
   // tem que colocar no modulo como um provider
@@ -21,9 +22,11 @@ export class CursoService {
   // CursoService.criouNovoCurso.emit(curso);
 
   getCursos() {
+    this._log.consoleLog('obentendo lista de cursos');
     return this.cursos;
   }
   addCurso(curso: string) {
+    this._log.consoleLog(`Criando um novo curso ${curso}`);
     this.cursos.push(curso);
     this.emitirCursoCriado.emit(curso);
     CursoService.criouNovoCurso.emit(curso);

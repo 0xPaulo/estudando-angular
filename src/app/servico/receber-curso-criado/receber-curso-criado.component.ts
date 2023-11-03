@@ -14,7 +14,7 @@ export class ReceberCursoCriadoComponent implements OnInit {
   // e vai pro html ngIf{{curso}}
   ngOnInit() {
     this._service.emitirCursoCriado.subscribe(
-      // geito 1
+      // jeito 1
       (cursoCriado) => (this.curso = cursoCriado)
     );
   }
