@@ -2,10 +2,10 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { FundoAzulDirective } from '../shared/fundo-azul.directive';
-import { HighlightMouseDirective } from '../shared/highlight-mouse.directive';
-import { HighlightDirective } from '../shared/highlight.directive';
-import { NgElseDirective } from '../shared/ng-else.directive';
+import { FundoAzulDirective } from '../shared/diretivas/fundo-azul.directive';
+import { HighlightMouseDirective } from '../shared/diretivas/highlight-mouse.directive';
+import { HighlightDirective } from '../shared/diretivas/highlight.directive';
+import { NgElseDirective } from '../shared/diretivas/ng-else.directive';
 import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.component';
 import { DiretivaNgStyleComponent } from './diretiva-ng-style/diretiva-ng-style.component';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';

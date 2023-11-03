@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CursoService } from 'src/app/service/curso.service';
+import { CursoService } from 'src/app/service/servico/curso.service';
 import { CursoComponent } from './curso.component';
 
 @NgModule({
