@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CursoService } from 'src/app/service/curso.service';
+import { CursoService } from 'src/app/service/servico/curso.service';
 
 @Component({
   selector: 'app-criar-curso',
