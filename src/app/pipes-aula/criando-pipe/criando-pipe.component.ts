@@ -13,4 +13,10 @@ export class CriandoPipeComponent {
     dataLancamento: new Date(2016, 5, 23),
     url: 'https://www.google.com/',
   };
+  livros: string[] = ['Angular 2', 'Java'];
+  filtro: string = '';
+  addCurso(valor: any) {
+    this.livros.push(valor);
+    console.log(this.livros);
+  }
 }

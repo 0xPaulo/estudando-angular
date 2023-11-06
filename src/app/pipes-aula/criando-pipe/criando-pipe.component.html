@@ -1,4 +1,4 @@
-<h4>Exemplos de pipes</h4>
+<!-- <h4>Exemplos de pipes</h4>
 
 <p>Titulo: {{livro.titulo | uppercase | camelCase}}</p>
 <p>Estrelas: {{livro.rating | number: "1.1-1"}}</p>
@@ -7,4 +7,18 @@
 <p>Data Lançamento: {{livro.dataLancamento | date:"dd MMM YYY"}}</p>
 <p>URL: {{livro.url}}</p>
 <br>
-<p>{{livro | json}}</p>
+<p>{{livro | json}}</p> -->
+<p>Filtro</p>
+<input type="text" [(ngModel)]="filtro">
+<br><br>
+<p>Adicionar Novo Valor</p>
+<input type="text" #novoValor>
+
+<button (click)="addCurso(novoValor.value)">Adicionar curso</button>
+
+<ul>
+  <li *ngFor="let item of livros | filtroArray:filtro">
+    {{item}}
+  </li>
+</ul>
+<!-- Nao é recomendado fazer desse jeito -->
