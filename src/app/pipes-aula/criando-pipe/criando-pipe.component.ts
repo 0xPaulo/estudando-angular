@@ -1,5 +1,5 @@
-import { literalMap } from '@angular/compiler';
 import { Component } from '@angular/core';
+import { Observable, interval, map } from 'rxjs';
 
 @Component({
   selector: 'app-criando-pipe',
@@ -50,16 +50,23 @@ export class CriandoPipeComponent {
     console.log('Livros após filtro:', livrosFiltrados);
     return livrosFiltrados;
   }
+  // v é transformado em lower oq estiver no filtro tambem e ai sao comparados
+  // com o indexOf, que vai retornar o numero aonde eles sao iguais
+  // se for maior ou = 0 volta true e a palavra fica no array para aparecer
+  // caso for -1 ela sai do array e nao aparece no filtro
+  // os true e false nao retorna no metodo isso é dentro do filter
+  // pra ele saber oq fica salvo ou nao
+  // ele vai retornar um array
+
+  // let frase = "Isso é uma frase de exemplo.";
+  // let posicao = frase.indexOf("palavra");
+
+  // console.log(posicao); // Saída: -1
+
+  valorAsync = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Valor assincrono'), 3000);
+  });
+
+  valorAsync2 = interval(2000).pipe(map((valor) => 'valor assíncrono 2'));
+  // o uso do pipe aqui é para usar o map e outros, ele junta os filtros
 }
-// v é transformado em lower oq estiver no filtro tambem e ai sao comparados
-// com o indexOf, que vai retornar o numero aonde eles sao iguais
-// se for maior ou = 0 volta true e a palavra fica no array para aparecer
-// caso for -1 ela sai do array e nao aparece no filtro
-// os true e false nao retorna no metodo isso é dentro do filter
-// pra ele saber oq fica salvo ou nao
-// ele vai retornar um array
-
-// let frase = "Isso é uma frase de exemplo.";
-// let posicao = frase.indexOf("palavra");
-
-// console.log(posicao); // Saída: -1
