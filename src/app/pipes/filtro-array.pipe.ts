@@ -2,6 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'filtroArray',
+  // aqui iria o pure = false
 })
 export class FiltroArrayPipe implements PipeTransform {
   transform(value: any, ...args: any[]): any {
@@ -16,7 +17,7 @@ export class FiltroArrayPipe implements PipeTransform {
         (v: string) => v.toLowerCase().indexOf(filter) !== -1
       );
     }
-
     return value;
   }
 }
+// devido a performance isso aqui teria que acontecer no component e nao no pipe

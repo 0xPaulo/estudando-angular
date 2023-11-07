@@ -16,9 +16,15 @@
 
 <button (click)="addCurso(novoValor.value)">Adicionar curso</button>
 
+<!-- Jeito mal otimizado -->
 <ul>
   <li *ngFor="let item of livros | filtroArray:filtro">
     {{item}}
   </li>
 </ul>
-<!-- Nao é recomendado fazer desse jeito -->
+<!-- Jeito otimizado -->
+<ul>
+  <li *ngFor="let item of getLivros()">
+    {{item}}
+  </li>
+</ul>
