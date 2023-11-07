@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { DiretivasModule } from './diretivas/diretivas.module';
 import { ServicoModule } from './servico/servico.module';
 import { PipesModule } from './pipes-aula/pipes.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
